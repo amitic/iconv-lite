@@ -3,6 +3,13 @@
 // Manually added data to be used by sbcs codec in addition to generated one.
 
 module.exports = {
+    "windows1252+": {
+        "type": "_sbcs",
+        "chars": `€${new Buffer('C281', 'hex').toString('utf8')}‚ƒ„…†‡ˆ‰Š‹Œ${new Buffer('C28D', 'hex').toString('utf8')}Ž${new Buffer('C28F', 'hex').toString('utf8')}${new Buffer('C290', 'hex').toString('utf8')}‘’“”•–—˜™š›œ${new Buffer('C29D', 'hex').toString('utf8')}žŸ ¡¢£¤¥¦§¨©ª«¬­®¯°±²³´µ¶·¸¹º»¼½¾¿ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ`
+    },
+    "win1252+": "windows1252+",
+    "cp1252+": "windows1252+",
+
     // Not supported by iconv, not sure why.
     "10029": "maccenteuro",
     "maccenteuro": {
